@@ -5,6 +5,7 @@ describe Smartcsv do
   describe "read an exemple csv file" do
 
     let(:content) do
+      FileUtils.mkdir_p './tmp'
       file = './tmp/example.csv'
       CSV.open(file, "wb:UTF-8:#{encode}", col_sep: col_sep) do |csv|
         csv << ['Dürüm', 'Kebab']
