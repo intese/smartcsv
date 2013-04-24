@@ -18,10 +18,10 @@ Or install it yourself as:
 
 ## Usage
 
-    ```ruby
-      # returned csv encoded as utf-8
-      Smartcsv.read(file)
-    ```
+```ruby
+    # returned csv encoded as utf-8
+    Smartcsv.read(file)
+```
 
 ## Contributing
 
