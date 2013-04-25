@@ -18,5 +18,4 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'rspec', '~> 2.10.0'
   gem.add_development_dependency 'guard-rspec'
   gem.add_development_dependency 'rb-fsevent'
-  gem.add_dependency 'cmess'
 end
