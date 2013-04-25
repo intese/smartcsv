@@ -4,9 +4,9 @@ require File.expand_path('../lib/smartcsv/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Arthur Harder"]
   gem.email         = ["info@easywebsolutions.de"]
-  gem.description   = %q{}
+  gem.description   = %q{Read csv files in any character encodings and column separators: semicolon, comma, tab}
   gem.summary       = %q{A CSV wrapper for read method with autodetect of column separator and encoding to utf-8}
-  gem.homepage      = ""
+  gem.homepage      = "http://rubygems.org/gems/smartcsv"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
