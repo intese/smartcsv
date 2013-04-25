@@ -7,9 +7,10 @@ describe Smartcsv do
     let(:content) do
       FileUtils.mkdir_p './tmp'
       file = './tmp/example.csv'
-      CSV.open(file, "wb:UTF-8:#{encode}", col_sep: col_sep) do |csv|
-        csv << ['Dürüm', 'Kebab']
-        csv << ['Dürüm', 'Kebab']
+      encode_string = encode == 'UTF-8' ? '' : ":UTF-8:#{encode}"
+      CSV.open(file, "wb#{encode_string}", col_sep: col_sep) do |csv|
+        csv << ['Dürüm', 'Kebab', 'Тест']
+        csv << ['Dürüm', 'Kebab', 'Тест']
       end
       file
     end

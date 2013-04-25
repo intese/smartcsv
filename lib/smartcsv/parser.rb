@@ -7,11 +7,7 @@ module Smartcsv
     end
 
     def self.get_encoding(file)
-      @encoding ||= begin
-                      encoding = CMess::GuessEncoding::Automatic.guess(File.read(file))
-                      encoding.downcase =~ /iso|utf/ ? encoding : 'ISO-8859-1'
-                    end
-      "%s:UTF-8" % @encoding
+      @encoding ||= File.read(file).encoding.name
     end
 
     def self.get_separator(file)
