@@ -1,5 +1,3 @@
-require 'cmess/guess_encoding'
-
 module Smartcsv
   class Parser
     def self.read(file)
